@@ -23,11 +23,10 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - JavaScript
 - Git e Github
 
-[🔗 Clique aqui para acessar](https://focus-timer-2-0-psi.vercel.app/)
-
 ## 💻 Projeto
 
-O cronômetro tem como intuito trabalhar com o metodo de ensino, Pomodoro. Nesse projeto você consegue escolher acrescentar ou diminuir 5 minutos, e também pode escolher uma faixa de som para escutar enquanto se concentra.
+O cronômetro tem como intuito trabalhar com o metodo de ensino, Pomodoro. Nesse projeto você consegue escolher acrescentar ou diminuir 5 minutos, e também pode escolher uma faixa de som para escutar enquanto se concentra.<br/><br/>
+[🔗 Clique aqui para acessar](https://focus-timer-2-0-psi.vercel.app/)
 
 ---
 
