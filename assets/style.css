@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --bg-principal: #FFFFFF;
+    --font-principal: 'Roboto', sans-serif;
+    --bg-dark-mode: #121214;
+    --color-svg: #C4C4CC; 
+    --bg-sounds: #29292E;
+    --focus-sound-dark: #0A3442;
+}
+
+body {
+    background: var(--bg-principal);
+    display: grid;
+    height: 100vh;
+    font-family: var(--font-principal); 
+}
+
+.hide {
+    display: none;
+}
+
+/* DARK MODE */
+.bodyModeDark {
+    background: var(--bg-dark-mode);
+}
+
+.bodyModeDark path {
+    fill: var(--color-svg);
+}
+
+.fontModeDark {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    font-weight: 500;
+    font-size: clamp(4.5rem, 4.5rem + 10vw, 7.875rem);
+    margin-bottom: 1rem;
+}
+
+.soundsButtons {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.soundsButtons > button{
+    background-color: var(--bg-sounds);
+    width: 8.625rem;
+    height: 9.5rem;
+    border-radius: 1.5rem;
+}
+
+.soundsButtons button:focus {
+    background: var(--focus-sound-dark);
+    transition: .3s;
+}
+
+.soundsButtons button:focus path{
+    fill: var(--bg-principal);
+    transition: .3s;
+}
+/* --- */
+
+button, svg {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.dark-mode {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 2rem;
+}
+
+.controlsSounds {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0.8rem 2rem ;
+}
+
+.timer{
+    display: flex;
+    color: #323238;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 7.875rem;
+    margin-bottom: 1rem;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.sounds {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.sounds > button {
+    background-color: #E1E1E6;
+    width: 8.625rem;
+    height: 9.5rem;
+    border-radius: 1.5rem;
+}
+
+.sounds button:focus  {
+    background: #02799D;
+    transition: .3s;
+}
+  
+.sounds button:focus path {
+    fill: #FFFFFF;
+    transition: .3s;
+}
+
+@media (max-width: 850px) {
+    main {
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .timer {
+        font-size: 6.7rem;
+    }
+
+    .fontModeDark {
+        font-size: 6.7rem;
+    }
+
+    .sounds > button {
+        width: 7rem;
+        height: 7.5rem;
+    }
+
+    .soundsButtons > button{
+        width: 7rem;
+        height: 7.5rem;
+    }
+    
+    #controls {
+        gap: 1.5rem;
+    }
+
+    .dark-mode {
+        left: 50%;
+        top: 0;
+        padding: 5rem 0;
+
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+    }
+
+    .controlsSounds {
+        left: 50%;
+        bottom: 0;
+        
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        padding-bottom: 3rem;
+    }
+}
