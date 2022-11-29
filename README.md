@@ -11,7 +11,7 @@ Projeto criado na aula de manipulação de DOM, promovido pela Rocketseat para e
 <br>
 
 <p align="center" >
-  <img style="margin-right: 20px;" alt="cronômetro" src=".github/preview.png" width="25%">
+  <img alt="cronômetro" src=".github/preview.png" width="25%">
   <img alt="cronômetro" src=".github/previewDark.png" width="25%">
 </p>
 
