@@ -166,7 +166,7 @@ main {
     .dark-mode {
         left: 50%;
         top: 0;
-        padding: 5rem 0;
+        padding: 2rem 0;
 
         transform: translateX(-50%);
         display: flex;
@@ -180,6 +180,6 @@ main {
         transform: translateX(-50%);
         display: flex;
         justify-content: center;
-        padding-bottom: 3rem;
+        padding-bottom: 1rem;
     }
 }
